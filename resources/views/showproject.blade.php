@@ -1,4 +1,4 @@
-@extends("layout.dashboard")
+@extends("layout.webtemplate")
 @section("titlename")
     PROJECTS
 @endsection
@@ -7,10 +7,10 @@
     <style>
        
         .project-box {
-            background-color: #ffffff;
+            background-color: #f4f4f4;
             border: 1px solid #cccccc;
-            padding: 15px;
-            margin-bottom: 15px;
+            padding: 10px;
+            margin-bottom: 10px;
             border-radius: 5px;
         }
 

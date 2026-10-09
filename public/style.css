@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Flex-direction badal kar column kiya taaki sidebar upar chala jaye */
+.dashboard {
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh;
+}
+
+/* Sidebar ko header me badla bina HTML touch kiye */
+.sidebar {
+    background-color: #1e293b;
+    display: flex;
+    padding: 15px 30px;
+    gap: 20px;
+}
+
+.sidebar a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 8px 12px;
+    transition: all 0.2s ease;
+}
+
+.sidebar a:hover {
+    color: #ffffff;
+    background-color: #334155;
+    border-radius: 4px;
+}
+
+/* Content area niche pure page par dikhega */
+.content {
+    flex-grow: 1;
+    padding: 30px;
+    background-color: #f1f5f9;
+}
+

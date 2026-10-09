@@ -1,4 +1,4 @@
-@extends("layout.dashboard")
+@extends("layout.admintemplate")
 @section("titlename")
     PROJECTS
 @endsection

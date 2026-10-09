@@ -41,7 +41,7 @@ class ProjectController extends Controller
             "tech_used"=>$request->tech_used,
             "url"=>$request->url
         ]);
-        return redirect("/showproject")->with("success","project is added");
+        return redirect()->back()->with("success","project is added");
     }
 
     /**

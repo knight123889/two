@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.dashboard {
+    display: flex;
+    flex-direction: column; 
+    min-height: 100vh;
+}
+
+/* Sidebar ko flex row banaya aur justify-content: space-between kiya */
+.sidebar {
+    background-color: #316e72;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.sidebar a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 8px 12px;
+    transition: all 0.2s ease;
+}
+
+.sidebar a:hover {
+    color: #ffffff;
+    background-color: #3f7b80;
+    border-radius: 4px;
+}
+
+/* Right Section Alignment */
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+/* Search Box Styling */
+.search-box input {
+    padding: 8px 15px;
+    border-radius: 20px;
+    border: 1px solid #c7d2d4;
+    background-color: #3f7b80;
+    color: #ffffff;
+    outline: none;
+    font-size: 14px;
+}
+
+.search-box input::placeholder {
+    color: #94a3b8;
+}
+
+/* Admin Styling */
+.admin-profile {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #cbd5e1;
+    cursor: pointer;
+}
+
+.admin-profile:hover {
+    color: #ffffff;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 30px;
+    background-color: #f1f5f9;
+}
